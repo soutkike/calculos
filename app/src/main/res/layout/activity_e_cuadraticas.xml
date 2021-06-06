@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Ingresa el valor de A:"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/a"
+            android:inputType="numberSigned"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_weight="10"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Ingresa el valor de B:"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/b"
+            android:inputType="numberSigned"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_weight="10"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Ingresa el valor de C:"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/c"
+            android:inputType="numberSigned"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_weight="10"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Resultado:"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+
+
+        <Button android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="Calcular"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:onClick="calcularCuadratica"
+            >
+        </Button>
+
+
+
+
+</LinearLayout>
