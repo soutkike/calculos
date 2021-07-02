@@ -1,6 +1,10 @@
 package com.example.appcalculos;
 
+import android.view.View;
+
 import java.util.ArrayList;
+
+import static java.lang.Math.pow;
 
 public class MathExpert {
 
@@ -40,6 +44,30 @@ public class MathExpert {
                 return false;
 
         return true;
+    }
+
+    public static String calcularCuadratica(double a, double b, double c){
+        float x1;
+        float x2;
+        double d = pow(b, 2) - 4 * a * c;
+        if(d >=0){
+            if(d==0){
+                double x = -b / (2 * a);
+               return "x: "+x;
+            }else{
+                x1 = (float) (-b + Math.sqrt(d) / (2 * a));
+                x2 = (float) (-b - Math.sqrt(d) / (2 * a));
+                return("x1: "+x1+" x2: "+x2);
+            }
+        }else{
+            double parteReal, parteImaginaria;
+            d = Math.abs(d);
+            parteReal = -b / (2 * a);
+            parteImaginaria = Math.sqrt(d) / (2 * a);
+            return("La raíz compleja  es"+parteReal+"  "+parteImaginaria+"i");
+
+        }
+
     }
 
 }
